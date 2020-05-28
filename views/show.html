@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card m-3">
+        <div class="card-header display-4 bg-primary text-center">
+            Task
+        </div>
+        <div class="card-body text-center">
+            <input type="text" ng-model="title" id="" class="form-control" readOnly>
+            <br />
+            <textarea name="message" rows="10" cols="30" class="form-control" readOnly ng-model="info" placeholder="Task description"></textarea>
+            <br>
+            <a ng-href="#!/edit{{title}}" class="btn btn-primary">Edit</a>
+        </div>
+        <br />
+</body>
+
+</html>

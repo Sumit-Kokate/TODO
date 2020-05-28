@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="text-center">
+        <a href="#!/add" class="btn btn-primary mt-2 mb-2">+ ADD Task</a>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row mb-4">
+                <div class="col">
+                    <input ng-model="name" type="text" name="" id="name" placeholder="Search Task ......" class="form-control" />
+                </div>
+            </div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action" data-ng-repeat="n in names|filter :name " ng-href="#!/show{{n.name}}">
+            {{ n.name }}
+            <button
+              class="h-100 float-right text-danger btn-outline-light font-weight-bolder"
+              data-ng-click="removeFromTodoList(n)"
+            >
+              &#10060;
+            </button>
+          </a>
+            </div>
+        </div>
+    </div>
+    <br />
+</body>
+
+</html>
