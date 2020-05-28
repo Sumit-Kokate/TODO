@@ -1,4 +1,5 @@
 var todo = angular.module("todo", ["ngRoute"]);
+//factory
 todo.factory("data", function() {
     factory = {};
 
