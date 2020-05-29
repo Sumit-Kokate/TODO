@@ -28,6 +28,7 @@ todo.factory("data", function() {
     };
     return factory;
 });
+//controller
 todo.controller("simple_controller", [
     "$scope",
     "$location",
